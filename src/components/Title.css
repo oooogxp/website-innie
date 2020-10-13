@@ -1,0 +1,28 @@
+.flex-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-menu-align {
+    display: flex;
+}
+
+.button {
+    /* 버튼테두리 없애는 방법 */
+    margin: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.footer {
+    /* 화면 맨 아래에 고정하는 방법 */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2c9c9;
+    color: white;
+    text-align: center;
+}
