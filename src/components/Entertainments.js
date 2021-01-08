@@ -4,7 +4,7 @@ import './Title.css';
 
 // 하위메뉴 만드는 방법. 중요한 것 : return 안에서 function 실행할 때는 react 가 알아듣는 지정된 말로 해야 함. (react 웹사이트에서 검색해보기)
 
-class Entertains extends Component {
+class Entertainments extends Component {
     constructor(props) {
         super(props);
 
@@ -50,4 +50,4 @@ class Entertains extends Component {
     }
 }
 
-export default Entertains;
+export default Entertainments;

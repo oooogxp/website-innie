@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Title.css';
 import './HoverBtn.css';
 import Btn from './Btn';
-import Entertains from './Entertains';
+import Entertainments from './Entertainments';
 import { Link } from 'react-router-dom';
 
 class Title extends Component {  
@@ -15,7 +15,7 @@ class Title extends Component {
                    <Link to="/blog"><Btn title="Blog"/></Link>
                     <Btn title="Portfolio"/>
                     <Btn title="Gallery"/>
-                    <Link to="/entertains"><Entertains entTitle="Entertains"/></Link>
+                    <Link to="/entertainments"><Entertainments entTitle="Entertainments"/></Link>
                 </div>
             </div>
         );
