@@ -36,9 +36,13 @@
 
 .contents-border {
     border: 2px solid black;
-    padding: 40px 30px 40px 110px;
+    padding: 40px 30px 40px 120px;
     margin: 20px;
     width: 250px;
+}
+
+.contents-width {
+    width: 600px;
 }
 
 .contents-padding {

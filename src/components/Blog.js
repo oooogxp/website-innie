@@ -22,10 +22,17 @@ class Blog extends Component {
             <div>
                 <div className="flex-align">
                     <article className="flex-align border">
+                        <h3>2021.01.13</h3>
+                        <h1>첫 버그를 만났다</h1>
+                        <p className="line-height contents-width">지금은 새벽 한 시. 이 와중에 발견한 첫 버그..! 내가 첫 버그라니!<br/>
+                        Entertainments 메뉴에 마우스를 갖다 대면 Submenu가 나와야 하는데, mouseover가 안 된 상태인데도 Submenu가 따단..!<br/>
+                        이유를 알려줘...! 모든 개발자들의 마음인가.. 겪어보니 이렇게 찝찝할 수가 없다. </p>
+                    </article>
+                    <article className="flex-align border">
                         <h3>2021.01.12</h3>
                         <h1>Snowy Day!</h1>
                         <p className="line-height contents-width">지난주에 이어 오늘도 폭설이 내렸다. 순식간에 5cm는 쌓인 것 같다. 온 세상이 하얗다!<br/>
-                        방송에서 제설 작업을 할 사람을 찾는다고 도움을 요청했다. 관리사무소 직원분들 일손이 모자른가보다.<br/>
+                        방송에서 제설 작업을 할 사람을 찾는다고 도움을 요청했다. 관리사무소 직원분들 일손이 모자른가 보다.<br/>
                         내일 서울에 가야하는데 운전은 어려울 것 같다. 오늘 부디 아무 사고도 일어나지 않길!</p>
                     </article>
                     <article className="flex-align border">
@@ -43,8 +50,6 @@ class Blog extends Component {
                         테슬라와 애플카의 경쟁구도! 앞으로 더 좋은 전기차들을 많이 만나게 될 것 같아 기대된다.<br/>
                         애플 주식은 어디까지 오룰까! 한 주라도 제대로 가져보고 싶다.<br/></p>
                     </article>
-
-
                 </div>
                 {/* {this.state.blogLists && this.state.blogLists.map(blog => <div> {blog.Title} </div> )} */}
             </div>

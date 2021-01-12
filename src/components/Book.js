@@ -5,7 +5,7 @@ class Book extends Component {
         return(
             <div>
                 <h1>P31</h1>
-                <script>저자  하형록</script>
+                <h3>저자 하형록</h3>
             </div>
         );
     }
