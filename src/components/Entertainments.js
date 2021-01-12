@@ -1,3 +1,5 @@
+// 중요 : 우선 이 컴포넌트는 비활성화.
+
 import React, { Component } from 'react';
 import './Mom.css';
 import './Book';
