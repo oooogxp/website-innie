@@ -1,3 +1,9 @@
+
+/* 정렬 css */
+.flex-menu-align {
+    display: flex;
+}
+
 .flex-align {
     display: flex;
     flex-direction: column;
@@ -8,6 +14,30 @@
     display: flex;
 }
 
+
+/* 폰트 관련 */
+.pFont {
+    font-size: 15px;;
+}
+
+.hFont {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* 박스 꾸미기 */
+.border {
+    border: 2px solid black;
+    padding: 40px 30px 40px 30px;
+    margin: 20px;
+    width: 800px;
+}
+
+/* 버튼 관련 */
 .button {
     /* 버튼테두리 없애는 방법 */
     margin: 10px;
@@ -17,6 +47,12 @@
     font-size: 15px;
 }
 
+.hover-btn {
+    font-style: bold;
+}
+
+
+/* 구조 */
 .footer {
     /* 화면 맨 아래에 고정하는 방법 */
     position: fixed;
