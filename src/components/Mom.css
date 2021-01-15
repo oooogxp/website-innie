@@ -10,11 +10,6 @@
     align-items: center;
 }
 
-.flex-menu-align {
-    display: flex;
-}
-
-
 /* 폰트 관련 */
 .pFont {
     font-size: 15px;;
@@ -63,6 +58,13 @@
     width: 800px;
 }
 
+.round-border {
+    border: 2px solid lightblue;
+    border-radius: 100%;
+    padding: 40px;
+    background-color: lightblue;
+}
+
 /* 버튼 관련 */
 .button {
     /* 버튼테두리 없애는 방법 */
@@ -77,6 +79,12 @@
     font-style: bold;
 }
 
+/* 배경 꾸미기 */
+
+.bgr-a {
+    background-color: rgb(19, 67, 158);
+    /* background-size: 700px; */
+}
 
 /* 구조 */
 .footer {
@@ -89,3 +97,5 @@
     color: white;
     text-align: center;
 }
+
+/* 애니메이션 */
