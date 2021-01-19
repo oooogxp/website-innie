@@ -10,6 +10,26 @@
     align-items: center;
 }
 
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* .book-container {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(2, 500px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
 /* 폰트 관련 */
 .pFont {
     font-size: 15px;;
@@ -36,9 +56,9 @@
     width: 250px;
 }
 
-.contents-width {
-    width: 600px;
-}
+/* .contents-width {
+    width: 250px;
+} */
 
 .contents-padding {
     padding: 0px 0px 0px 100px;
@@ -53,9 +73,11 @@
 /* 박스 꾸미기 */
 .border {
     border: 2px solid black;
-    padding: 40px 30px 40px 30px;
+    padding: 40px 30px;
+    
     margin: 20px;
-    width: 800px;
+    width: 300px;
+    /* width: 100%; */
 }
 
 .round-border {
