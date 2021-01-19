@@ -20,7 +20,7 @@ class Blog extends Component {
         console.log('State:', this.state.blogLists);
         return(
             <div>
-                <div className="flex-align">
+                <div className="book-container">
                     <article className="flex-align border">
                         <h3>2021.01.13</h3>
                         <h1>첫 버그를 만났다</h1>
