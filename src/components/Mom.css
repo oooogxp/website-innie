@@ -1,4 +1,13 @@
 
+/* 폰트 */
+@font-face {
+    font-family: 'nanum'; /*a name to be used later*/
+    src: url('../assets/font/NanumBarunpenR.ttf'); /*URL to font*/
+}
+body {
+    font-family: 'nanum';
+}
+
 /* 정렬 css */
 .flex-menu-align {
     display: flex;
@@ -72,9 +81,11 @@
 
 /* 박스 꾸미기 */
 .border {
-    border: 2px solid black;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+    border-right: transparent;
+    border-left: transparent;
     padding: 40px 30px;
-    
     margin: 20px;
     width: 300px;
     /* width: 100%; */
@@ -99,6 +110,10 @@
 
 .hover-btn {
     font-style: bold;
+}
+
+.hover-btn > button {
+    font-family: 'nanum';
 }
 
 /* 배경 꾸미기 */
