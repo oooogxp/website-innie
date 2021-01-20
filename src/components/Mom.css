@@ -146,3 +146,9 @@ body {
 }
 
 /* 애니메이션 */
+
+/* 타임라인 */
+
+.timeline {
+    display: flex;
+}

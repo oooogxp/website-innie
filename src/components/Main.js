@@ -13,6 +13,7 @@ class Main extends Component {
                 </h2>
                 <div className="hover-btn button flex-menu-align">
                     <Link to="/about"><Btn title="About"/></Link>
+                    <Link to="/timeline"><Btn title="Timeline"/></Link>
                     <Link to="/blog"><Btn title="Blog"/></Link>
                     <Link to="/book"><Btn title="Book"/></Link>
                 </div>

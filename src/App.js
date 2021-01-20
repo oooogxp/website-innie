@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Main from './components/Main';
+import Timeline from './components/Timeline';
 import Blog from './components/Blog';
 import About from './components/About';
 import Book from './components/Book';
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <Main></Main>
         <Route path="/about"><About></About></Route>
+        <Route path="/timeline"><Timeline></Timeline></Route>
         <Route path="/blog"><Blog></Blog></Route>
         <Route path="/book"><Book></Book></Route>
       </div>
