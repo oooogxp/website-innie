@@ -30,7 +30,8 @@ class Btn extends Component {
                 <button 
                     onMouseEnter={this.handleMouseHoverIn}
                     onMouseLeave={this.handleMouseHoverOut}
-                    className={`${this.state.isHovering ? "bold" : ""} button`}>{this.props.title}
+                    className={`${this.state.isHovering ? "bold" : ""} button`}>
+                        {this.props.title}
                 </button>
             </div>
         );

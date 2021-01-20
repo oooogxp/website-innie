@@ -39,6 +39,15 @@ body {
     margin-right: auto;
 } */
 
+/* 로고 관련 */
+.logo > a {
+    text-decoration: none;
+}
+.logo > a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 /* 폰트 관련 */
 .pFont {
     font-size: 15px;;
@@ -88,14 +97,15 @@ body {
     padding: 40px 30px;
     margin: 20px;
     width: 300px;
+    background-color: #f9fafb;
     /* width: 100%; */
 }
 
 .round-border {
-    border: 2px solid lightblue;
-    border-radius: 100%;
-    padding: 40px;
-    background-color: lightblue;
+    border: none;
+    border-radius: 9999px;
+    padding: 40px 55px;
+    background-color: #ede9fe;
 }
 
 /* 버튼 관련 */
