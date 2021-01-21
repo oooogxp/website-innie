@@ -149,6 +149,23 @@ body {
 
 /* 타임라인 */
 
-.timeline {
-    display: flex;
+.dot {
+    margin: 40px;
+    height: 18px;
+    width: 18px;
+    background-color: #191842;
+    opacity: 60%;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.line {
+    margin: 0;
+    border: none;
+    background-color: #f3f4f6;
+    opacity: 60%;
+    height: 100px;
+    width: 5px;
+    border-radius: 8px;
+    display: inline-flex;
 }
