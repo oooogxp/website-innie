@@ -169,3 +169,13 @@ body {
     border-radius: 8px;
     display: inline-flex;
 }
+
+.content-a {
+    white-space: nowrap;
+    margin: 0px 0px 0px 50px;
+}
+
+.content-b {
+    white-space: nowrap;
+    margin: 0px 0px 0px 30px;
+}
