@@ -8,7 +8,7 @@ class Main extends Component {
     render(){
         return(
             <div className="flex-align">
-                <h2 className="logo flex-align round-border">
+                <h2 className="logo flex-align logo">
                     <Link to="/about">YOON<br/>JEONG<br/>IN</Link>
                 </h2>
                 <div className="hover-btn button flex-menu-align">
