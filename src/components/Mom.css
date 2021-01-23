@@ -41,10 +41,9 @@ body {
 
 /* 로고 관련 */
 .logo {
-    border: none;
-    border-radius: 9999px;
-    padding: 40px 55px;
-    background-color: #f9f2ff;
+    border: 3px solid #000000;
+    border-radius: 35% 5%;
+    padding: 30px 40px;
 }
 
 .logo > a {
