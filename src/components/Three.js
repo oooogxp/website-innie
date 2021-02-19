@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import ubuntuFont from '../assets/font/ubuntu_medium_regular.json';
 
 class Three extends Component {
+
     // threejs code start
     componentDidMount() {
 
@@ -17,7 +18,9 @@ class Three extends Component {
          * Textures
          */
 
-        // const textureLoader = new THREE.TextureLoader()
+        const textureLoader = new THREE.TextureLoader()
+
+        const matcapTexture = textureLoader.load('../assets/images/8.png')
 
         /**
          * Fonts - react에서는 fontLoader.parse() 를 사용하고 function 안에 TextBufferGeometry 넣는게 아니라 그냥 실행시킴
@@ -28,7 +31,7 @@ class Three extends Component {
         const textGeometry = new THREE.TextBufferGeometry(
             'YOON JEONG IN', {
                 font: fontFile,
-                size: 0.4,
+                size: 0.5,
                 height: 0.2,
                 curveSegments: 5,
                 bevelEnabled: true,
@@ -40,9 +43,22 @@ class Three extends Component {
         )
         textGeometry.center()
 
-        const textMaterial = new THREE.MeshMatcapMaterial()
-        const text = new THREE.Mesh(textGeometry, textMaterial)
+        const material = new THREE.MeshMatcapMaterial({ map: matcapTexture })
+        const text = new THREE.Mesh(textGeometry, material)
         scene.add(text)
+
+        const donutGeometry = new THREE.TorusBufferGeometry(0.3, 0.2, 20, 45)
+
+        for(let i = 0; i < 300; i++){
+
+            const donut = new THREE.Mesh(donutGeometry, material)
+
+            donut.position.x = (Math.random() - 0.5) * 20
+            donut.position.y = (Math.random() - 0.5) * 20
+            donut.position.z = (Math.random() - 0.5) * 20
+            
+            scene.add(donut)
+        }
         
         /**
          * Sizes
@@ -96,22 +112,27 @@ class Three extends Component {
         /**
          * Animate
          */
-        // const clock = new THREE.Clock()
+        
 
+        // const clock = new THREE.Clock()
+        
         const tick = () => {
             // const elapsedTime = clock.getElapsedTime()
-            
+
             // Update Controls
             controls.update()
-
+        
             // Render
             renderer.render(scene, camera)
-
+        
             // Call tick again on the next frame
             window.requestAnimationFrame(tick)
         }
+        
         tick()
+
     }
+
     // threejs code end
     render() {
         return(
