@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import ubuntuFont from '../assets/font/ubuntu_medium_regular.json';
 
 class Three extends Component {
     // threejs code start
@@ -13,6 +14,37 @@ class Three extends Component {
         const scene = new THREE.Scene()
 
         /**
+         * Textures
+         */
+
+        // const textureLoader = new THREE.TextureLoader()
+
+        /**
+         * Fonts - react에서는 fontLoader.parse() 를 사용하고 function 안에 TextBufferGeometry 넣는게 아니라 그냥 실행시킴
+         */
+        const fontLoader = new THREE.FontLoader()
+        const fontFile = fontLoader.parse(ubuntuFont)
+
+        const textGeometry = new THREE.TextBufferGeometry(
+            'YOON JEONG IN', {
+                font: fontFile,
+                size: 0.4,
+                height: 0.2,
+                curveSegments: 5,
+                bevelEnabled: true,
+                bevelThickness: 0.03,
+                bevelSize: 0.02,
+                bevelOffset: 0,
+                bevelSegments: 4
+            }
+        )
+        textGeometry.center()
+
+        const textMaterial = new THREE.MeshMatcapMaterial()
+        const text = new THREE.Mesh(textGeometry, textMaterial)
+        scene.add(text)
+        
+        /**
          * Sizes
          */
 
@@ -20,16 +52,6 @@ class Three extends Component {
             width: window.innerWidth,
             height: window.innerHeight
         }
-
-        /**
-         * Objects
-         */
-
-        const cube = new THREE.Mesh(
-            new THREE.BoxGeometry(1, 1, 1),
-            new THREE.MeshBasicMaterial()
-        )
-        scene.add(cube)
 
         /**
          *  Camera
@@ -57,8 +79,8 @@ class Three extends Component {
          })
 
         // Controls
-        // const controls = new OrbitControls(camera, canvas)
-        // controls.enableDamping = true
+        const controls = new OrbitControls(camera, canvas)
+        controls.enableDamping = true
 
          /**
           * Renderer
@@ -74,13 +96,13 @@ class Three extends Component {
         /**
          * Animate
          */
-        const clock = new THREE.Clock()
+        // const clock = new THREE.Clock()
 
         const tick = () => {
-            const elapsedTime = clock.getElapsedTime()
+            // const elapsedTime = clock.getElapsedTime()
             
             // Update Controls
-            // controls.update()
+            controls.update()
 
             // Render
             renderer.render(scene, camera)
